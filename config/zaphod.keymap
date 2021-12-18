@@ -77,6 +77,7 @@
         compatible = "zmk,keymap";
 
         MAIN_layer {
+            label = "Base";
             bindings = <
                 &kp Z &kp F &kp M &kp P        &kp V            &kp SEMI     &dot_excl    &kp FSLH &kp DQT &kp SQT
                 &kp R &kp S &kp N &kp T        &kp B            &comma_colon &kp A        &kp E    &kp C   &kp I
@@ -86,6 +87,7 @@
         };
 
         SYM_LMOD_layer {
+            label = "Sym";
             bindings = <
                 &kp LA(LEFT)  &kp LS(LC(TAB)) &kp LC(TAB) &caps_word &none          &kp TILDE &kp LBRC  &kp RBRC &kp HASH &kp PIPE
                 &kp LA(RIGHT) &sk LALT        &sk LCTRL   &skq LSHFT &kp PSCRN      &kp LT    &kp LPAR  &kp RPAR &kp GT   &kp BSLH
@@ -95,6 +97,7 @@
         };
 
         NUM_RMOD_layer {
+            label = "Num";
             bindings = <
                &kp AMPS  &kp N7 &kp N8 &kp N9  &kp STAR       &none &caps_word &kp CAPS     &none     &none
                &kp CARET &kp N1 &kp N2 &kp N3  &kp EQUAL      &none &skq RSHFT &sk RCTRL    &sk RALT  &none
@@ -104,6 +107,7 @@
         };
 
         NAV_layer {
+            label = "Nav";
             bindings = <
                 &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp C_MUTE      &sk LALT     &kp LG(D)     &kp LS(LG(D)) &kp LG(Q)  &none
                 &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT  &kp C_PP        &sk LA(LGUI) &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP) &kp LG(RIGHT)
@@ -113,6 +117,7 @@
         };
 
         FN_layer {
+            label = "Fn";
             bindings = <
                 &none &kp F7 &kp F8 &kp F9 &kp F10      &none &kp C_BRI_DN &kp C_BRI_UP &none        &none
                 &none &kp F1 &kp F2 &kp F3 &kp F11      &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
